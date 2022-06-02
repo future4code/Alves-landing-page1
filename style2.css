@@ -1,9 +1,17 @@
+/*
+Página toda
+*/
+
 *{
   padding:0px;
   margin:0px;
 
 }
 
+/*
+Style da Página -Versão desktop
+
+*/
 .container {
   display: grid;
   width: 100%;
@@ -15,34 +23,53 @@
   grid-template-columns: 20vw 3fr;
   grid-template-rows: 160px 1fr 80px;
 }
-.container > div {
-  /* border: 1px solid black; */
- }  
 
- /* .header {
-  grid-area: cabecalho;
- } */
 .left {
   grid-area: menu-lateral;
-  height: 100vh;
+  height: 100%;
   width:20vw;
   display:flex;
   flex-direction: column;
-  position:sticky;
-  justify-content: center;
-  left: 0;
   background-color: #C23949;
+  gap: 16px;
 
+
+}
+.logo{
+  position:sticky;
+  top: 10%;
 }
 .navbar{
   font-family: roboto;
   color: white;
   text-align: center;
+  font-size: 26px;
+  position:sticky;
+  top: 50%;
+}
+
+.botao{
+  transition: all .5s;
+  border: 10px solid transparent;
+}
+.botao:hover{
+    border-bottom: 1px solid white;
+    border-radius: 10%;
+}
+
+h1{
+  text-align: center;
+  margin-top:16px;
+  margin-bottom: 16px;
 }
 .main {
  grid-area: main;
+ text-align: justify;
+ font-family: roboto;
+ font-size: 18px;
+ padding:32px;
  
-
+ 
 }
 .footer {
   grid-area: footer;
@@ -50,3 +77,44 @@
   background-image: linear-gradient(to right, #C23949, #D4747F );
   text-align: center;
 }
+/*
+Versão Responsiva - Smartphones
+
+*/
+@media screen and (min-device-width : 320px) and (max-device-width : 480px){
+  *{
+  display: grid;
+  
+  }
+  .container{
+  width: 100%;
+  height: 100%;
+  grid-template-areas: 
+  "menu-lateral"
+  "main"
+  "footer";
+  grid-template-columns: 100% ;
+  grid-template-rows: 160px 1fr 80px;
+  }
+  .left{
+   position:sticky;
+   top:0; 
+   width:100vw;
+   height:15vh;
+   grid-template-columns: 100px 5fr;
+   grid-template-rows: 100px 1fr;
+      
+  }
+  .logo{
+    max-width: 100px;
+    max-height: 100px;
+  }
+  }
+  .botao{
+    color:black;
+    position: relative;
+    top: 0;
+
+    
+  }
+  
