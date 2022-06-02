@@ -1,7 +1,6 @@
 *{
   padding:0px;
   margin:0px;
-
 }
 
 .container {
@@ -49,4 +48,19 @@
   background-color: #C23949;
   background-image: linear-gradient(to right, #C23949, #D4747F );
   text-align: center;
+}
+
+.footer h4 {
+  padding: 10px 0px 10px 0px;
+}
+
+.footer img {
+  padding: 10px;
+  
+  }
+
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .footer img {
+    width: 7%;
+  }
 }
