@@ -70,6 +70,27 @@ h1{
   top:2%;
 }
 
+#parte1 {
+  width: 40%;
+  font-size: medium;
+  text-align: justify;
+  background-color:floralwhite;
+  color: darkblue;
+  list-style: none;
+}
+
+#parte2 {
+  width: 10 %;
+  font-size: medium;
+  
+}
+
+.subtitulo {
+  text-align: center;
+}
+.tabela1 {
+  display: inline-block; 
+}
 
 .main {
  grid-area: main;
@@ -77,9 +98,39 @@ h1{
  font-family: roboto;
  font-size: 18px;
  padding:32px;
- 
- 
 }
+
+
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  border: 2px solid white;
+  box-shadow: 10px 10px 10px 5px gray;
+  align-items: center;
+}
+
+
+.cards img {
+  width: 100%;
+}
+
+.cardtexto {
+  text-align: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.botaocard {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+  background-color: #C23949;
+  color: white;
+  border:white;
+  width: 100%;
+}
+
+ 
+
 .footer {
   grid-area: footer;
   background-color: #C23949;
@@ -124,8 +175,7 @@ Versão Responsiva - Smartphones
     color:black;
     position: relative;
     top: 0;
-
-    
+   
   }
   
 
