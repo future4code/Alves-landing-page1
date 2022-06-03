@@ -79,7 +79,7 @@ h1{
 
 /*
 Versão Responsiva - Smartphones
-
+So pra comitar
 */
 @media screen and (min-device-width : 320px) and (max-device-width : 480px){
   *{
@@ -111,7 +111,7 @@ Versão Responsiva - Smartphones
   }
   }
   .botao{
-    color:black;
+    color: white;
     position: relative;
     top: 0;
 
