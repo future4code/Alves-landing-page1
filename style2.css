@@ -19,8 +19,9 @@ Style da Página -Versão desktop
   "menu-lateral main"
   "menu-lateral main"
   "menu-lateral footer";
-  grid-template-columns: 20vw 3fr;
-  grid-template-rows: 160px 1fr 80px;
+  grid-template-columns: 20vw 2fr;
+  grid-template-rows: 160px 2fr 80px;
+ 
 }
 
 .left {
@@ -45,6 +46,7 @@ Style da Página -Versão desktop
   font-size: 26px;
   position:sticky;
   top: 10%;
+
   
 }
 .logo{
@@ -55,6 +57,7 @@ Style da Página -Versão desktop
 .botao{
   transition: all .5s;
   border: 10px solid transparent;
+  text-decoration: none;
 
 }
 .botao:hover{
@@ -73,8 +76,11 @@ h1{
  font-family: roboto;
  font-size: 18px;
  padding:32px;
- 
- 
+ display: flex;
+ flex-direction: column;
+ min-height: 100%;
+
+   
 }
 .footer {
   grid-area: footer;
@@ -88,6 +94,32 @@ h1{
   padding: 10px;
   
   }
+#caminhao-bola{
+  max-width: 100px;
+  display:inline;
+}
+#title{
+  font-size: 32px;
+}
+.text-1{
+  text-align: justify;
+  
+}
+
+#divisao{
+  min-width:100%;
+  max-height: 2px;
+  
+}
+#entrega{
+max-width: 160px;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+
+
 
 /*
 Versão Responsiva - Smartphones
@@ -132,7 +164,7 @@ Versão Responsiva - Smartphones
     position: relative;
     top: 0;
     border: 1px solid white;
-    font-size: 13px;
+    font-size: 12px;
 
    
   }
@@ -150,5 +182,14 @@ Versão Responsiva - Smartphones
   .footer img {
     width: 7%;
   }
-
+  .main{
+    flex-direction: column;
+  }
+  .left-text{
+    max-width:100vw;
+  }
+  .right-text{
+    max-width:100vw;
+  }
 }
+
