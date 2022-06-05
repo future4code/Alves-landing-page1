@@ -45,12 +45,14 @@ Style da Página -Versão desktop
   text-align: center;
   font-size: 26px;
   position:sticky;
-  top: 10%;
+  top: 50%;
 
   
 }
 .logo{
   max-width: 20vw;
+  position:sticky;
+  top:10%
   
 }
 
@@ -107,8 +109,6 @@ h1{
  font-family: roboto;
  font-size: 18px;
  padding:32px;
-
-
  display: flex;
  flex-direction: column;
  min-height: 100%;
@@ -116,7 +116,7 @@ h1{
 
 
 
-/* .cards {
+ .cards {
   display: flex;
   flex-direction: column;
   width: 20%;
@@ -140,18 +140,19 @@ h1{
   background-color: #C23949;
   border:white;
   width: 100%;
-} */
+} 
 
  
 
 .footer {
-  grid-area: footer;
+  /* grid-area: footer; */
   background-color: #C23949;
   background-image: linear-gradient(to right, #C23949, #D4747F );
   text-align: center;
   padding: 5px;
   height:13vh;
   width:100%;
+
 }
 .footer img {
   padding: 10px;
@@ -163,6 +164,9 @@ h1{
 }
 #title{
   font-size: 32px;
+}
+#nossotime{
+  padding: 50px;
 }
 .text-1{
   text-align: justify;
@@ -207,7 +211,48 @@ a{
   text-align: center;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
+.precard{
+  display:flex;
+  justify-content:space-around;
+}
+/* FORMULÁRIO DE CONTATO */
 
+.icones {
+  width: 20px;
+}
+#mensagem {
+  width: 300px;
+  height: 150px;
+}
+
+#formulario-contato {
+  background-color: #C23949;
+  border-radius: 10px;
+  padding: 100px;
+  margin-top: 100px;
+  width: min-content;
+  color: white;
+  margin-left: 200px;
+}
+
+input {
+  min-width: 320px;
+  border-radius: 22px;
+  border: 2px white solid;
+  padding: 5px;
+  margin: 0px 0px 12px -5px;
+}
+
+button {
+  width: 100%;
+  height: 40px;
+  border: none;
+  font-size: 10px;
+  color:#C23949;
+  border-radius: 20px;
+  outline: none;
+  font-weight: bold;
+}
 /*
 Versão Responsiva - Smartphones
 
@@ -221,18 +266,18 @@ Versão Responsiva - Smartphones
   "menu-lateral"
   "main"
   "footer";
-  grid-template-columns: 100% ;
+  grid-template-columns: 100% 1fr 100% ;
   grid-template-rows: 160px 1fr 80px;
   }
   .left{
    position:sticky;
    top:0; 
-   width:100vw;
+   width:100%;
    height:15vh;
    grid-template-columns: 100px ;
    grid-template-rows: 100px ;
    display: flex;
-   flex-direction: column;
+   /* flex-direction: column; */
     
       
   }
@@ -256,7 +301,6 @@ Versão Responsiva - Smartphones
 
    
   }
-  
 
 .footer h4 {
   padding: 10px 0px 10px 0px;
@@ -279,45 +323,44 @@ Versão Responsiva - Smartphones
   .right-text{
     max-width:100vw;
   }
+  .icones {
+    width: 20px;
+  }
+  #mensagem {
+    width: 300px;
+    height: 150px;
+  }
+  
+  #formulario-contato {
+    background-color: #C23949;
+    border-radius: 10px;
+    /* padding: 100px; */
+    margin-top: 100px;
+    width: min-content;
+    color: white;
+    /* margin-left: 200px; */
+  }
+  
+  input {
+    min-width: 320px;
+    border-radius: 22px;
+    border: 2px white solid;
+    padding: 5px;
+    margin: 0px 0px 12px -5px;
+  }
+  
+  button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    font-size: 10px;
+    color:#C23949;
+    border-radius: 20px;
+    outline: none;
+    font-weight: bold;
+  }
 }
 
 
-/* FORMULÁRIO DE CONTATO */
-
-.icones {
-  width: 20px;
-}
-#mensagem {
-  width: 300px;
-  height: 150px;
-}
-
-#formulario-contato {
-  background-color: #C23949;
-  border-radius: 10px;
-  padding: 45px;
-  width: min-content;
-  color: white;
-  margin-left: 200px;
-}
-
-input {
-  min-width: 320px;
-  border-radius: 22px;
-  border: 2px white solid;
-  padding: 5px;
-  margin: 0px 0px 12px -5px;
-}
-
-button {
-  width: 100%;
-  height: 40px;
-  border: none;
-  font-size: 1.2em;
-  color:#C23949;
-  border-radius: 20px;
-  outline: none;
-  font-weight: bold;
-}
 
 
