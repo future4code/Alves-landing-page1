@@ -209,6 +209,7 @@ a {
   border: 2px solid white;
   box-shadow: 10px 10px 10px 5px gray;
   align-items: center;
+  margin: 30px;
 }
 
 
@@ -351,7 +352,6 @@ Versão Responsiva - Smartphones
     box-shadow: 10px 10px 10px 5px gray;
     align-items: center;
     margin: 8px;
-
   }
 
   .linha1 {
