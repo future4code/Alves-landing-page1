@@ -116,7 +116,7 @@ h1{
 
 
 
-.cards {
+/* .cards {
   display: flex;
   flex-direction: column;
   width: 20%;
@@ -138,10 +138,9 @@ h1{
 .botaocard {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
   background-color: #C23949;
-  color: white;
   border:white;
   width: 100%;
-}
+} */
 
  
 
@@ -151,7 +150,7 @@ h1{
   background-image: linear-gradient(to right, #C23949, #D4747F );
   text-align: center;
   padding: 5px;
-  height:10vh;
+  height:13vh;
   width:100%;
 }
 .footer img {
@@ -182,8 +181,31 @@ a{
   text-decoration: none;
   color: white;
 }
-#formulario-contato{
- 
+
+.linha1 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content:space-evenly;
+}
+
+  .um {
+  display: flex;
+  flex-direction:column;
+  width: 15%;
+  border: 2px solid white;
+  box-shadow: 10px 10px 10px 5px gray;
+  align-items: center;
+}
+
+
+.imgserv {
+  width: 100%;
+}
+
+.descreve {
+  text-align: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 /*
@@ -276,6 +298,7 @@ Versão Responsiva - Smartphones
   padding: 45px;
   width: min-content;
   color: white;
+  margin-left: 200px;
 }
 
 input {
@@ -297,5 +320,4 @@ button {
   font-weight: bold;
 }
 
-}
 
