@@ -2,9 +2,9 @@
 Página toda
 */
 
-*{
-  padding:0px;
-  margin:0px;
+* {
+  padding: 0px;
+  margin: 0px;
 }
 
 /*
@@ -15,23 +15,23 @@ Style da Página -Versão desktop
   display: grid;
   width: 100%;
   height: 100;
-  grid-template-areas: 
-  "menu-lateral main"
-  "menu-lateral main"
-  "menu-lateral footer";
+  grid-template-areas:
+    "menu-lateral main"
+    "menu-lateral main"
+    "menu-lateral footer";
   grid-template-columns: 20vw 2fr;
   grid-template-rows: 160px 2fr 80px;
- 
+
 }
 
 .left {
   grid-area: menu-lateral;
   height: 100%;
-  width:20vw;
-  display:flex;
+  width: 20vw;
+  display: flex;
   flex-direction: column;
   background-color: #C23949;
-  padding:5px;
+  padding: 5px;
   font-family: roboto;
   color: white;
   text-align: center;
@@ -39,53 +39,54 @@ Style da Página -Versão desktop
 
 }
 
-.navbar{
+.navbar {
   font-family: roboto;
   color: white;
   text-align: center;
   font-size: 26px;
-  position:sticky;
+  position: sticky;
   top: 50%;
 
-  
-}
-.logo{
-  max-width: 20vw;
-  position:sticky;
-  top:10%
-  
+
 }
 
-.botao{
+.logo {
+  max-width: 20vw;
+  position: sticky;
+  top: 10%
+}
+
+.botao {
   transition: all .5s;
   border: 10px solid transparent;
   text-decoration: none;
 
 }
-.botao:hover{
-    border-bottom: 1px solid white;
-    border-radius: 10%;
+
+.botao:hover {
+  border-bottom: 1px solid white;
+  border-radius: 10%;
 }
 
-h1{
+h1 {
   text-align: center;
-  margin-top:16px;
+  margin-top: 16px;
   margin-bottom: 16px;
 }
 
-#botao-fixo{
+#botao-fixo {
   border-color: whitesmoke;
   margin-left: 7.5%;
-  background:rgba(0,0,0,0.2);
-  position:fixed;
-  top:2%;
+  background: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 2%;
 }
 
 #parte1 {
   width: 40%;
   font-size: medium;
   text-align: justify;
-  background-color:floralwhite;
+  background-color: floralwhite;
   color: darkblue;
   list-style: none;
 }
@@ -93,30 +94,28 @@ h1{
 #parte2 {
   width: 10 %;
   font-size: medium;
-  
 }
 
 .subtitulo {
   text-align: center;
 }
+
 .tabela1 {
-  display: inline-block; 
+  display: inline-block;
 }
 
 .main {
- grid-area: main;
- text-align: justify;
- font-family: roboto;
- font-size: 18px;
- padding:32px;
- display: flex;
- flex-direction: column;
- min-height: 100%;
+  grid-area: main;
+  text-align: justify;
+  font-family: roboto;
+  font-size: 18px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
-
-
- .cards {
+.cards {
   display: flex;
   flex-direction: column;
   width: 20%;
@@ -125,63 +124,83 @@ h1{
   align-items: center;
 }
 
-
 .cards img {
   width: 100%;
 }
 
 .cardtexto {
   text-align: center;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 5px;
+  align-items: flex-end;
 }
-
+.card-text {
+  font-size: x-small;
+}
 .botaocard {
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   background-color: #C23949;
-  border:white;
+  border: white;
   width: 100%;
-} 
-
- 
+}
 
 .footer {
   /* grid-area: footer; */
   background-color: #C23949;
-  background-image: linear-gradient(to right, #C23949, #D4747F );
+  background-image: linear-gradient(to right, #C23949, #D4747F);
   text-align: center;
   padding: 5px;
-  height:13vh;
-  width:100%;
-
+  height: 13vh;
+  width: 100%;
 }
+
 .footer img {
   padding: 10px;
-  
-  }
-#caminhao-bola{
+
+}
+
+#caminhao-bola {
   max-width: 100px;
-  display:inline;
+  display: inline;
 }
-#title{
+
+.titulos-h1 {
   font-size: 32px;
+  color: #C23949;
 }
-#nossotime{
+.titulos-h2 {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  color: #C23949;
+}
+
+.titulos-h3 {
+  color: #C23949;
+}
+
+#nossa-frota {
   padding: 50px;
 }
-.text-1{
+
+.text-1 {
   text-align: justify;
+  align-items: center;
+}
+.text-1 ul {
+  margin-left: 20px;
   
 }
 
-#divisao{
-  min-width:100%;
-  max-height: 2px;
+.text-1 img {
+  min-width: 300px;
   
 }
-#entrega{
-max-width: 160px;
+
+#entrega {
+  max-width: 160px;
 }
-a{
+
+a {
   text-decoration: none;
   color: white;
 }
@@ -190,12 +209,12 @@ a{
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
 }
 
-  .um {
+.um {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   width: 15%;
   border: 2px solid white;
   box-shadow: 10px 10px 10px 5px gray;
@@ -209,17 +228,20 @@ a{
 
 .descreve {
   text-align: center;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
-.precard{
-  display:flex;
-  justify-content:space-around;
+
+.precard {
+  display: flex;
+  justify-content: space-around;
 }
+
 /* FORMULÁRIO DE CONTATO */
 
 .icones {
   width: 20px;
 }
+
 #mensagem {
   width: 300px;
   height: 150px;
@@ -228,11 +250,11 @@ a{
 #formulario-contato {
   background-color: #C23949;
   border-radius: 10px;
-  padding: 100px;
-  margin-top: 100px;
+  padding: 2.5rem;
+  margin-top: 2.5rem;
   width: min-content;
   color: white;
-  margin-left: 200px;
+  margin-left: 2.5rem;
 }
 
 input {
@@ -248,89 +270,90 @@ button {
   height: 40px;
   border: none;
   font-size: 10px;
-  color:#C23949;
+  color: #C23949;
   border-radius: 20px;
   outline: none;
   font-weight: bold;
 }
+
 /*
 Versão Responsiva - Smartphones
 
 */
-@media screen and (min-device-width : 320px) and (max-device-width : 480px){
-  
-  .container{
-  width: 100%;
-  height: 100%;
-  grid-template-areas: 
-  "menu-lateral"
-  "main"
-  "footer";
-  grid-template-columns: 100% 1fr 100% ;
-  grid-template-rows: 160px 1fr 80px;
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+  .container {
+    width: 100%;
+    height: 100%;
+    grid-template-areas:
+      "menu-lateral"
+      "main"
+      "footer";
+    grid-template-columns: 100% 1fr 100%;
+    grid-template-rows: 160px 1fr 80px;
   }
-  .left{
-   position:sticky;
-   top:0; 
-   width:100%;
-   height:15vh;
-   grid-template-columns: 100px ;
-   grid-template-rows: 100px ;
-   display: flex;
-   /* flex-direction: column; */
-    
-      
+
+  .left {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 15vh;
+    grid-template-columns: 100px;
+    grid-template-rows: 100px;
+    display: flex;
+    /* flex-direction: column; */
+
+
   }
-  .logo{
+
+  .logo {
     max-width: 80px;
     max-height: 80px;
     display: inline;
   }
 
-  .navbar p{
+  .navbar p {
     display: inline;
   }
-  
-  .botao{
+
+  .botao {
     color: white;
     position: relative;
     top: 0;
-
     border: 1px solid white;
     font-size: 12px;
-
-   
   }
 
-.footer h4 {
-  padding: 10px 0px 10px 0px;
-}
-
-.footer img {
-  padding: 10px;
-  
+  .footer h4 {
+    padding: 10px 0px 10px 0px;
   }
 
   .footer img {
+    padding: 10px;
     width: 7%;
   }
-  .main{
+
+  .main {
     flex-direction: column;
   }
-  .left-text{
-    max-width:100vw;
+
+  .left-text {
+    max-width: 100vw;
   }
-  .right-text{
-    max-width:100vw;
+
+  .right-text {
+    max-width: 100vw;
   }
+
   .icones {
     width: 20px;
   }
+
   #mensagem {
     width: 300px;
     height: 150px;
   }
-  
+
   #formulario-contato {
     background-color: #C23949;
     border-radius: 10px;
@@ -340,7 +363,7 @@ Versão Responsiva - Smartphones
     color: white;
     /* margin-left: 200px; */
   }
-  
+
   input {
     min-width: 320px;
     border-radius: 22px;
@@ -348,19 +371,15 @@ Versão Responsiva - Smartphones
     padding: 5px;
     margin: 0px 0px 12px -5px;
   }
-  
+
   button {
     width: 100%;
     height: 40px;
     border: none;
     font-size: 10px;
-    color:#C23949;
+    color: #C23949;
     border-radius: 20px;
     outline: none;
     font-weight: bold;
   }
 }
-
-
-
-
