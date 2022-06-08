@@ -1,0 +1,411 @@
+/*
+Página toda
+*/
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+/*
+Style da Página -Versão desktop
+
+*/
+.container {
+  display: grid;
+  width: 100%;
+  height: 100;
+  grid-template-areas:
+    "menu-lateral main"
+    "menu-lateral main"
+    "menu-lateral footer";
+  grid-template-columns: 20vw 2fr;
+  grid-template-rows: 160px 2fr 80px;
+
+}
+
+.left {
+  grid-area: menu-lateral;
+  height: 100%;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  background-color: #C23949;
+  padding: 5px;
+  font-family: roboto;
+  color: white;
+  text-align: center;
+  font-size: 26px;
+
+}
+
+.navbar {
+  font-family: roboto;
+  color: white;
+  text-align: center;
+  font-size: 26px;
+  position: sticky;
+  top: 50%;
+
+
+}
+
+.logo {
+  max-width: 20vw;
+  position: sticky;
+  top: 10%
+}
+
+.botao {
+  transition: all .5s;
+  border: 10px solid transparent;
+  text-decoration: none;
+
+}
+
+.botao:hover {
+  border-bottom: 1px solid white;
+  border-radius: 10%;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+#botao-fixo {
+  border-color: whitesmoke;
+  margin-left: 7.5%;
+  background: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 2%;
+}
+
+#parte1 {
+  width: 40%;
+  font-size: medium;
+  text-align: justify;
+  background-color: floralwhite;
+  color: darkblue;
+  list-style: none;
+}
+
+#parte2 {
+  width: 10 %;
+  font-size: medium;
+
+}
+
+.subtitulo {
+  text-align: center;
+}
+
+.tabela1 {
+  display: inline-block;
+}
+
+.main {
+  grid-area: main;
+  text-align: justify;
+  font-family: roboto;
+  font-size: 18px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  border: 2px solid white;
+  box-shadow: 10px 10px 10px 5px gray;
+  align-items: center;
+}
+
+
+.cards img {
+  width: 100%;
+}
+
+.cardtexto {
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.botaocard {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: #C23949;
+  border: white;
+  width: 100%;
+}
+
+
+
+.footer {
+  /* grid-area: footer; */
+  background-color: #C23949;
+  background-image: linear-gradient(to right, #C23949, #D4747F);
+  text-align: center;
+  padding: 5px;
+  height: 13vh;
+  width: 100%;
+
+}
+
+.footer img {
+  padding: 10px;
+
+}
+
+#caminhao-bola {
+  max-width: 100px;
+  display: inline;
+}
+
+#title {
+  font-size: 32px;
+}
+
+#nossotime {
+  padding: 50px;
+}
+
+.text-1 {
+  text-align: justify;
+
+}
+
+#divisao {
+  min-width: 100%;
+  max-height: 2px;
+
+}
+
+#entrega {
+  max-width: 160px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.linha1 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.um {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  border: 2px solid white;
+  box-shadow: 10px 10px 10px 5px gray;
+  align-items: center;
+  margin: 30px;
+}
+
+
+.imgserv {
+  width: 100%;
+}
+
+.descreve {
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.precard {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* FORMULÁRIO DE CONTATO */
+
+.icones {
+  width: 20px;
+}
+
+#mensagem {
+  width: 300px;
+  height: 150px;
+}
+
+#formulario-contato {
+  background-color: #C23949;
+  border-radius: 10px;
+  padding: 100px;
+  margin-top: 100px;
+  width: min-content;
+  color: white;
+  margin-left: 200px;
+}
+
+input {
+  min-width: 320px;
+  border-radius: 22px;
+  border: 2px white solid;
+  padding: 5px;
+  margin: 0px 0px 12px -5px;
+}
+
+button {
+  width: 100%;
+  height: 40px;
+  border: none;
+  font-size: 10px;
+  color: #C23949;
+  border-radius: 20px;
+  outline: none;
+  font-weight: bold;
+}
+
+/*
+Versão Responsiva - Smartphones
+
+*/
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+  .container {
+    width: 100%;
+    height: 100%;
+    grid-template-areas:
+      "menu-lateral"
+      "main"
+      "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 160px 1fr 80px;
+  }
+
+  .left {
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    height: 15vh;
+    grid-template-columns: 100px;
+    grid-template-rows: 100px;
+    display: flex;
+    flex-direction: row;
+
+
+  }
+
+  .logo {
+    max-width: 80px;
+    max-height: 80px;
+    display: inline;
+  }
+
+  .navbar p {
+    display: inline;
+  }
+
+  .botao {
+    color: white;
+    border: 1px solid white;
+    font-size: 14px;
+    max-width: 80px;
+    display: inline;
+    position: relative;
+    top: 70%;
+
+  }
+
+
+  .footer h4 {
+    padding: 10px 0px 10px 0px;
+  }
+
+  .footer img {
+    padding: 10px;
+
+  }
+
+  .footer img {
+    width: 7%;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+
+  .left-text {
+    max-width: 100vw;
+  }
+
+  .right-text {
+    max-width: 100vw;
+  }
+
+  .um {
+    display: flex;
+    flex-direction: column;
+    width:40%;
+    border: 2px solid white;
+    box-shadow: 10px 10px 10px 5px gray;
+    align-items: center;
+    margin: 8px;
+  }
+
+  .linha1 {
+    flex-wrap: wrap;
+    
+  }
+  .precard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .cards{
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 2rem;
+    
+  }
+
+  .icones {
+    width: 20px;
+  }
+  /*Formulário*/
+  #mensagem {
+    width: 300px;
+    height: 150px;
+  }
+  
+  #formulario-contato {
+    background-color: #C23949;
+    border-radius: 10px;
+    padding: 2.5rem;
+    margin-top: 2.5rem;
+    margin-left: 0rem;
+    width: min-content;
+    color: white;
+    
+  }
+  
+  input {
+    min-width: 100%;
+    border-radius: 22px;
+    border: 2px white solid;
+    padding: 5px;
+    margin: 0px 0px 12px -5px;
+  }
+  
+  button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    font-size: 10px;
+    color: #C23949;
+    border-radius: 20px;
+    outline: none;
+    font-weight: bold;  
+}
+}
